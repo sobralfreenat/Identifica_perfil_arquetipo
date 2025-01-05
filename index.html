@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Identificação de Estilos e Público-Alvo</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f9f9f9; /* Fundo suave */
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333; /* Cor do título */
+        text-align: center;
+    }
+
+    form {
+        background: #fff; /* Fundo branco para o formulário */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 400px; /* Largura máxima do formulário */
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block; /* Faz com que os labels ocupem toda a linha */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Largura total */
+        padding: 10px; /* Espaçamento interno */
+        margin: 5px 0 15px 0; /* Margem entre os campos */
+        border: 1px solid #ccc; /* Borda cinza */
+        border-radius: 4px; /* Bordas arredondadas */
+        box-sizing: border-box; /* Inclui padding e borda na largura total */
+    }
+
+    input[type="radio"] {
+        margin-right: 5px; /* Espaçamento à direita dos botões de rádio */
+    }
+
+    button {
+        background-color: #1f4343;; /* Azul padrão */
+        color: white; /* Texto branco */
+        border: none; /* Sem borda */
+        border-radius: 4px; /* Bordas arredondadas */
+        padding: 10px 15px; /* Espaçamento interno */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        font-size: 16px; /* Tamanho da fonte */
+        margin-top: 10px; /* Margem superior */
+        transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    }
+
+    button:hover {
+        background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    }
+
+    .result {
+        background: #fff; /* Fundo branco para o resultado */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        padding: 20px;
+        margin-top: 20px; /* Margem superior */
+    }
+
+    .arquetipo {
+        margin: 10px 0; /* Margem entre os arquétipos */
+        padding: 10px; /* Espaçamento interno */
+        border: 1px solid #e0e0e0; /* Borda cinza clara */
+        border-radius: 4px; /* Bordas arredondadas */
+        background: #f7f7f7; /* Fundo levemente cinza */
+    }
+</style>
+</head>
+<body>
+  <img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/66468353e4e6d_FNWfreenatstoreLogodownload.jpg" alt="Logo FNW" style="display: block; margin: 0 auto; max-width: 10%; height: auto;"><br><br>
+<h1>Descubra seu Estilo e o Público-Alvo Ideal</h1>
+<form id="estiloForm">
+    <div>
+        <label>Nome:</label><br>
+        <input type="text" id="nome" required><br>
+    </div>
+    <div>
+        <label>E-mail:</label><br>
+        <input type="email" id="email" required><br>
+    </div>
+    <div>
+        <label>Descrição da sua Marca:</label><br>
+        <textarea id="descricaoMarca" rows="4" placeholder="Ex: Minha marca é uma sigla FNW (FREE NAT WORK - Liberdade para trabalhar conforme sua própria natureza) e a ponte mostrando que a FNW dá sustentação para a superação do desafio." required></textarea><br>
+    </div>
+    <div>
+        <label>1. O que mais te motiva em sua atividade profissional?</label><br>
+        <input type="radio" name="motivacao" value="impactar vidas"> Impactar vidas<br>
+        <input type="radio" name="motivacao" value="resolver problemas"> Resolver problemas<br>
+        <input type="radio" name="motivacao" value="inovar constantemente"> Inovar constantemente<br>
+    </div>
+    <div>
+        <label>2. Quando enfrenta um desafio, você costuma:</label><br>
+        <input type="radio" name="risco" value="arriscar novas abordagens"> Arriscar novas abordagens<br>
+        <input type="radio" name="risco" value="seguir métodos tradicionais"> Seguir métodos tradicionais<br>
+        <input type="radio" name="risco" value="manter uma abordagem equilibrada"> Manter uma abordagem equilibrada<br>
+    </div>
+    <div>
+        <label>3. Qual é o principal obstáculo que você enfrenta atualmente?</label><br>
+        <input type="radio" name="desafio" value="falta de tempo"> Falta de tempo<br>
+        <input type="radio" name="desafio" value="dificuldade em atrair clientes"> Dificuldade em atrair clientes<br>
+        <input type="radio" name="desafio" value="falta de clareza sobre o caminho a seguir"> Falta de clareza sobre o caminho a seguir<br>
+    </div>
+    <div>
+        <label>4. Como você se descreveria em sua abordagem profissional?</label><br>
+        <input type="radio" name="estilo" value="proativo"> Proativo<br>
+        <input type="radio" name="estilo" value="reflexivo"> Reflexivo<br>
+        <input type="radio" name="estilo" value="colaborativo"> Colaborativo<br>
+        <input type="radio" name="estilo" value="estratégico"> Estratégico<br>
+    </div>
+    <div>
+        <label>5. Como você lida com riscos em sua prática?</label><br>
+        <input type="radio" name="risco2" value="abraçar o desconhecido"> Abraçar o desconhecido<br>
+        <input type="radio" name="risco2" value="evitar riscos desnecessários"> Evitar riscos desnecessários<br>
+        <input type="radio" name="risco2" value="adotar uma postura cautelosa"> Adotar uma postura cautelosa<br>
+    </div>
+    <div>
+        <label>6. Qual é o perfil do seu público-alvo?</label><br>
+        <input type="radio" name="publico" value="jovens empreendedores"> Jovens empreendedores<br>
+        <input type="radio" name="publico" value="profissionais estabelecidos"> Profissionais estabelecidos<br>
+        <input type="radio" name="publico" value="pequenos empresários"> Pequenos empresários<br>
+        <input type="radio" name="publico" value="outros"> Outros<br>
+    </div>
+    <button type="button" class="button" onclick="calcularEstilo()">Enviar</button>
+    <button type="button" class="button" onclick="salvarJSON()">Salvar Preenchimento</button>
+    <button type="button" class="button" onclick="carregarJSON()">Carregar Preenchimento</button>
+</form>
+<div id="resultado" class="result hidden"></div>
+
+<script>
+    function calcularEstilo() {
+        const form = document.getElementById('estiloForm');
+        const motivacao = form.motivacao.value;
+        const risco = form.risco.value;
+        const desafio = form.desafio.value;
+        const estilo = form.estilo.value;
+        const risco2 = form.risco2.value;
+        const publico = form.publico.value;
+        const nome = document.getElementById('nome').value;
+        const descricaoMarca = document.getElementById('descricaoMarca').value;
+
+        let pontuacao = {
+            Proativo: 0,
+            Reflexivo: 0,
+            Colaborativo: 0,
+            Estratégico: 0
+        };
+
+        // Avaliação das respostas
+        if (motivacao === "impactar vidas") pontuacao.Proativo++;
+        if (motivacao === "resolver problemas") pontuacao.Colaborativo++;
+        if (motivacao === "inovar constantemente") pontuacao.Estratégico++;
+
+        if (risco === "arriscar novas abordagens") pontuacao.Proativo++;
+        if (risco === "seguir métodos tradicionais") pontuacao.Reflexivo++;
+        if (risco === "manter uma abordagem equilibrada") {
+            pontuacao.Proativo++;
+            pontuacao.Reflexivo++;
+        }
+
+        if (desafio === "falta de tempo") pontuacao.Proativo++;
+        if (desafio === "dificuldade em atrair clientes") pontuacao.Colaborativo++;
+        if (desafio === "falta de clareza sobre o caminho a seguir") pontuacao.Estratégico++;
+
+        // Avaliação das perguntas de estilo
+        if (estilo) pontuacao[estilo.charAt(0).toUpperCase() + estilo.slice(1)]++;
+
+        if (risco2 === "abraçar o desconhecido") pontuacao.Proativo++;
+        if (risco2 === "evitar riscos desnecessários") pontuacao.Reflexivo++;
+        if (risco2 === "adotar uma postura cautelosa") {
+            pontuacao.Proativo++;
+            pontuacao.Reflexivo++;
+        }
+
+        // Determinar o estilo predominante
+        let estiloPredominante = Object.keys(pontuacao).reduce((a, b) => pontuacao[a] > pontuacao[b] ? a : b);
+
+        // Definindo os arquétipos baseados em Carl Jung
+        const arquetipos = {
+            Proativo: {
+                nome: "O Inovador",
+                principio: "Criatividade e mudança.",
+                descricao: "Busca constantemente novas ideias e melhorias.",
+                sombra: "Pode ser visto como impulsivo ou desconsiderar a segurança."
+            },
+            Reflexivo: {
+                nome: "O Sábio",
+                principio: "Sabedoria e conhecimento.",
+                descricao: "Valoriza a análise e a reflexão antes de agir.",
+                sombra: "Pode se tornar indeciso ou excessivamente crítico."
+            },
+            Colaborativo: {
+                nome: "O Cuidador",
+                principio: "Empatia e apoio.",
+                descricao: "Foca na construção de relacionamentos e no suporte mútuo.",
+                sombra: "Pode se sacrificar demais ou evitar conflitos."
+            },
+            Estratégico: {
+                nome: "O Governante",
+                principio: "Controle e responsabilidade.",
+                descricao: "Planeja e estrutura suas ações de forma estratégica.",
+                sombra: "Pode ser visto como autoritário ou inflexível."
+            }
+        };
+
+        // Definindo os novos arquétipos
+        const novosArquetipos = {
+            Aguia: {
+                nome: "Águia",
+                fogo: "Colérico",
+                direcao: "Vertical",
+                caracteristicas: "Liderança, visão, energia.",
+                aplicacao: "Ideal para quem busca se destacar e liderar."
+            },
+            Tubarao: {
+                nome: "Tubarão",
+                ar: "Sanguíneo",
+                direcao: "Diagonal",
+                caracteristicas: "Sociabilidade, adaptabilidade, comunicação.",
+                aplicacao: "Para pessoas que precisam de uma imagem forte e carismática."
+            },
+            Lobo: {
+                nome: "Lobo",
+                terra: "Melancólico",
+                direcao: "Curva",
+                caracteristicas: "Introspecção, lealdade, profundidade.",
+                aplicacao: "Para quem deseja transmitir confiança e estabilidade."
+            },
+            Gato: {
+                nome: "Gato",
+                agua: "Fleumático",
+                direcao: "Horizontal",
+                caracteristicas: "Calma, adaptabilidade, sensibilidade.",
+                aplicacao: "Ideal para uma imagem mais suave e acessível."
+            }
+        };
+
+        // Definindo as sombras do público-alvo
+        const sombrasPublico = {
+            "jovens empreendedores": "Podem ser inexperientes e propensos a decisões impulsivas.",
+            "profissionais estabelecidos": "Podem estar presos a métodos tradicionais e resistir à mudança.",
+            "pequenos empresários": "Podem sentir-se sobrecarregados e incapazes de delegar responsabilidades.",
+            "outros": "Podem ter expectativas variadas e desafios únicos que não são facilmente identificáveis."
+        };
+
+        // Resumo de qualificação
+        let resumo = `<h2>Resultados da Avaliação</h2>`;
+        resumo += `<h3>Seu Estilo Predominante</h3>`;
+        resumo += `<p><strong>Arquétipo:</strong> ${arquetipos[estiloPredominante].nome}</p>`;
+        resumo += `<p><strong>Princípio:</strong> ${arquetipos[estiloPredominante].principio}</p>`;
+        resumo += `<p><strong>Descrição:</strong> ${arquetipos[estiloPredominante].descricao}</p>`;
+        resumo += `<p><strong>Sombra:</strong> ${arquetipos[estiloPredominante].sombra}</p>`;
+        resumo += `<p><strong>Descrição da Marca:</strong> ${descricaoMarca}</p>`;
+        resumo += `<p><strong>Motivação:</strong> ${motivacao}. Isso indica que você está focado em ${motivacao === "impactar vidas" ? "fazer a diferença na vida dos outros." : motivacao === "resolver problemas" ? "encontrar soluções para desafios." : "trazer inovação ao seu campo."} Essa motivação pode influenciar a forma como você se conecta com seu público.</p>`;
+        resumo += `<p><strong>Desafio:</strong> ${desafio}. Para superá-lo, considere buscar apoio através de mentoria, cursos ou networking. Isso pode ajudá-lo a encontrar soluções e clareza nas suas ações.</p>`;
+        resumo += `<p><strong>Abordagem:</strong> ${estilo}. Isso reflete como você se posiciona em relação ao seu trabalho e suas interações. Como um ${estiloPredominante}, você tende a ${estiloPredominante === "Colaborativo" ? "focar na construção de parcerias e na promoção de um ambiente de suporte mútuo." : estiloPredominante === "Proativo" ? "tomar a iniciativa e buscar constantemente melhorias." : estiloPredominante === "Reflexivo" ? "analisar profundamente as situações antes de agir." : "planejar e estruturar suas ações de forma estratégica."} Além disso, você pode se beneficiar de ${estiloPredominante === "Colaborativo" ? "fomentar um ambiente de feedback e troca de ideias." : estiloPredominante === "Proativo" ? "definir metas claras e mensuráveis para suas iniciativas." : estiloPredominante === "Reflexivo" ? "reuniões regulares para revisar e ajustar estratégias." : "análises de risco detalhadas para suas decisões."}</p>`;
+        resumo += `<p><strong>Risco:</strong> ${risco2}. Sua abordagem ao risco pode influenciar suas decisões e a forma como você lida com incertezas, sendo essencial entender como isso afeta suas interações com o público.</p>`;
+        resumo += `<p><strong>Público-Alvo:</strong> ${publico}. Considerando seu estilo e motivação, seu público pode ser mais receptivo a abordagens que enfatizem ${estiloPredominante === "Colaborativo" ? "a construção de relacionamentos e apoio mútuo." : estiloPredominante === "Proativo" ? "inovação e dinamismo." : estiloPredominante === "Reflexivo" ? "análises profundas e fundamentadas." : "planejamento estratégico e visão."} Compreender isso pode ajudá-lo a adaptar sua mensagem e suas estratégias de marketing.</p>`;
+        
+        // Sombra do público-alvo
+        resumo += `<p><strong>Sombra do Público-Alvo:</strong> ${sombrasPublico[publico]}</p>`;
+
+        // Relacionando segmentos de público-alvo com a análise
+        resumo += `<h3>Segmentos de Público-Alvo</h3>`;
+        const segmentosRelacionados = {
+            "jovens empreendedores": "Este grupo busca inovação e pode se beneficiar de uma abordagem dinâmica e criativa.",
+            "profissionais estabelecidos": "Este segmento valoriza a tradição e a segurança, sendo mais receptivo a propostas que ofereçam estabilidade.",
+            "pequenos empresários": "Eles tendem a procurar soluções práticas e apoio na construção de redes de contato.",
+            "outros": "Esse grupo pode incluir nichos específicos que requerem uma abordagem personalizada e adaptativa."
+        };
+
+        resumo += `<p><strong>${publico}:</strong> ${segmentosRelacionados[publico]}</p>`;
+
+        // Sugestões de estilo de comunicação
+        let comunicacaoSugestao = "";
+        switch (estiloPredominante) {
+            case "Proativo":
+                comunicacaoSugestao = "Use uma linguagem enérgica e motivacional. Mostre entusiasmo e destaque as oportunidades de inovação.";
+                break;
+            case "Reflexivo":
+                comunicacaoSugestao = "Adote uma abordagem analítica. Utilize dados e fatos para sustentar suas afirmações e crie um ambiente de discussão.";
+                break;
+            case "Colaborativo":
+                comunicacaoSugestao = "Priorize a construção de relacionamentos. Utilize uma comunicação empática e que promova a inclusão e o trabalho em equipe.";
+                    break;
+                case "Estratégico":
+                    comunicacaoSugestao = "Seja claro e objetivo. Apresente uma visão de longo prazo e destaque os benefícios de suas propostas.";
+                    break;
+            }
+
+            resumo += `<p><strong>Sugestão de Estilo de Comunicação:</strong> ${comunicacaoSugestao}</p>`;
+
+            // Adicionando informações sobre novos arquétipos
+            resumo += `<h3>Arquétipos Adicionais</h3>`;
+            for (const key in novosArquetipos) {
+                resumo += `<div class="arquetipo"><strong>${novosArquetipos[key].nome}</strong> (${novosArquetipos[key].fogo || novosArquetipos[key].ar || novosArquetipos[key].terra || novosArquetipos[key].agua}) - ${novosArquetipos[key].direcao}<br>`;
+                resumo += `Características: ${novosArquetipos[key].caracteristicas}<br>`;
+                resumo += `Aplicação: ${novosArquetipos[key].aplicacao}</div>`;
+            }
+
+            // Exibir resultado
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = resumo;
+            resultadoDiv.classList.remove('hidden');
+        }
+
+        function salvarJSON() {
+            const form = document.getElementById('estiloForm');
+            const nome = document.getElementById('nome').value;
+            const data = {
+                nome: nome,
+                email: document.getElementById('email').value,
+                descricaoMarca: document.getElementById('descricaoMarca').value,
+                motivacao: form.motivacao.value,
+                risco: form.risco.value,
+                desafio: form.desafio.value,
+                estilo: form.estilo.value,
+                risco2: form.risco2.value,
+                publico: form.publico.value
+            };
+
+            const json = JSON.stringify(data, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `FNW_${nome}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function carregarJSON() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = e => {
+                const file = e.target.files[0];
+                const reader = new FileReader();
+                reader.onload = readerEvent => {
+                    const content = readerEvent.target.result;
+                    const data = JSON.parse(content);
+                    document.getElementById('nome').value = data.nome;
+                    document.getElementById('email').value = data.email;
+                    document.getElementById('descricaoMarca').value = data.descricaoMarca;
+                    document.querySelector(`input[name="motivacao"][value="${data.motivacao}"]`).checked = true;
+                    document.querySelector(`input[name="risco"][value="${data.risco}"]`).checked = true;
+                    document.querySelector(`input[name="desafio"][value="${data.desafio}"]`).checked = true;
+                    document.querySelector(`input[name="estilo"][value="${data.estilo}"]`).checked = true;
+                    document.querySelector(`input[name="risco2"][value="${data.risco2}"]`).checked = true;
+                    document.querySelector(`input[name="publico"][value="${data.publico}"]`).checked = true;
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        }
+    </script>
+</body>
+</html>
